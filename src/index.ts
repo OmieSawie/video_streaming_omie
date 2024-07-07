@@ -29,7 +29,7 @@ app.listen(port, () => {
 
   // Schedule the task to run every hour (adjust as needed)
   // cron.schedule("*/30 * * * *", async () => {
-  cron.schedule("*1 * * * *", async () => {
+  cron.schedule("*/1 * * * *", async () => {
     console.log("Running cron job to check video views and update title...");
     await checkAndUpdateVideoTitle();
   });
